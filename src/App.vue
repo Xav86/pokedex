@@ -1,11 +1,14 @@
 <template>
   <div id="app">
-
+    <div v-for="(poke, index) in pokemons" :key="index">
+      <PokemonList :name="poke.name" :url="poke.url" :num="index+1"/>
+    </div>
   </div>
 </template>
 
 <script>
 import axios from 'axios';
+import PokemonList from './components/Pokemon.vue';
 
 export default {
   name: 'App',
@@ -22,7 +25,11 @@ export default {
     }).catch(err => {
       console.log("erro ao pegar lista de pokemon",err);
     });
+  },
+  components: {
+    PokemonList,
   }
+
 }
 </script>
 
