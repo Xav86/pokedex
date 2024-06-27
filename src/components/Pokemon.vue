@@ -1,6 +1,6 @@
 <template>
     <div class="pokemon">
-        <small>{{ url }}</small>
+        <!-- <small>{{ url }}</small> -->
 
         <div class="card">
             <div class="card-image">
