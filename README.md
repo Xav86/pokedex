@@ -1,7 +1,5 @@
 # pokedex
 
-Um projeto que sera desenvolvido em Vue, com o objetivo de desenvolver uma pokedex usando a api pokeAPI. feito junto ao curso formação node do Guia do Programador.
-
 ## Project setup
 ```
 npm install
